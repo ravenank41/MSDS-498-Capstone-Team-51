@@ -1,5 +1,5 @@
 # ==========================================
-# 1. PYTHON & JUPYTER NOTEBOOK CACHES
+# PYTHON & JUPYTER NOTEBOOK CACHES
 # ==========================================
 __pycache__/
 *.py[cod]
@@ -30,7 +30,7 @@ MANIFEST
 ipython_history*
 
 # ==========================================
-# 2. R ENVIRONMENT & CACHES
+# R ENVIRONMENT & CACHES
 # ==========================================
 .Rhistory
 .RData
@@ -40,7 +40,7 @@ ipython_history*
 .RDataTmp
 
 # ==========================================
-# 3. DATA LAKE & SCRAPING CACHES
+# DATA LAKE & SCRAPING CACHES
 # ==========================================
 # Ignore local Basketball-Reference raw HTML caches and scrapings
 data/bbref_cache/
@@ -49,10 +49,10 @@ data/bbref_cache/
 
 # Ignore large raw data files or temporary data downloads if needed
 # (Uncomment below if you want to keep raw data off Git entirely and rely on scripts to pull it)
-# data/raw/*.csv
+data/raw/*.csv
 
 # ==========================================
-# 4. RAG VECTOR DATABASES & LOCAL EMBEDDINGS
+# RAG VECTOR DATABASES & LOCAL EMBEDDINGS
 # ==========================================
 # Ignore local ChromaDB, FAISS, or vector storage directories
 rag_chatbot/vector_db/
@@ -62,7 +62,7 @@ faiss_index/
 *.sqlite3
 
 # ==========================================
-# 5. ENVIRONMENT VARIABLES & SECRETS
+# ENVIRONMENT VARIABLES & SECRETS
 # ==========================================
 # Protect API keys (OpenAI, Anthropic, etc.)
 .env
@@ -74,7 +74,7 @@ env.bak/
 venv.bak/
 
 # ==========================================
-# 6. OPERATING SYSTEM JUNKS
+# OPERATING SYSTEM JUNKS
 # ==========================================
 # macOS
 .DS_Store
@@ -100,7 +100,7 @@ $RECYCLE.BIN/
 .nfs*
 
 # ==========================================
-# 7. IDE & TEXT EDITOR CONFIGURATIONS
+# IDE & TEXT EDITOR CONFIGURATIONS
 # ==========================================
 # VS Code
 .vscode/
@@ -116,10 +116,37 @@ $RECYCLE.BIN/
 out/
 
 # ==========================================
-# 8. LOGS & TEMPORARY FILES
+# LOGS & TEMPORARY FILES
 # ==========================================
 *.log
 *.sqlite
 *.db
 tmp/
 temp/
+
+# ==========================================
+# RAG VECTOR DATABASES & LOCAL EMBEDDINGS
+# ==========================================
+# Ignore local ChromaDB, FAISS, or vector store directories
+rag_chatbot/vector_db/
+chroma_db/
+faiss_index/
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# LOCAL DATABASES & PERSISTENCE
+# ==========================================
+# Ignore local PostgreSQL or SQLite database files/volumes
+database/
+*.db
+*.sqlite
+postgres_data/
+pgdata/
+
+# ==========================================
+# DOCKER & CONTAINER VOLUMES
+# ==========================================
+# Ignore local container override files and persistent volume mounts
+docker-compose.override.yml
+.docker/
