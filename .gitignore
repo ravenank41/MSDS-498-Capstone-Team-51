@@ -1,0 +1,125 @@
+# ==========================================
+# 1. PYTHON & JUPYTER NOTEBOOK CACHES
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook checkpoints & local execution caches
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+ipython_history*
+
+# ==========================================
+# 2. R ENVIRONMENT & CACHES
+# ==========================================
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj.user/
+.Rproj.user*
+.RDataTmp
+
+# ==========================================
+# 3. DATA LAKE & SCRAPING CACHES
+# ==========================================
+# Ignore local Basketball-Reference raw HTML caches and scrapings
+data/bbref_cache/
+*.html
+*.htm
+
+# Ignore large raw data files or temporary data downloads if needed
+# (Uncomment below if you want to keep raw data off Git entirely and rely on scripts to pull it)
+# data/raw/*.csv
+
+# ==========================================
+# 4. RAG VECTOR DATABASES & LOCAL EMBEDDINGS
+# ==========================================
+# Ignore local ChromaDB, FAISS, or vector storage directories
+rag_chatbot/vector_db/
+chroma_db/
+faiss_index/
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# 5. ENVIRONMENT VARIABLES & SECRETS
+# ==========================================
+# Protect API keys (OpenAI, Anthropic, etc.)
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# 6. OPERATING SYSTEM JUNKS
+# ==========================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs_db.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==========================================
+# 7. IDE & TEXT EDITOR CONFIGURATIONS
+# ==========================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# ==========================================
+# 8. LOGS & TEMPORARY FILES
+# ==========================================
+*.log
+*.sqlite
+*.db
+tmp/
+temp/
