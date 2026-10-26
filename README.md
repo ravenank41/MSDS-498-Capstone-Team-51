@@ -7,7 +7,7 @@ Repo currently holds the following primary folders:
 - tests: unit tests for various purposes
 
 Repo also contains the following root directory files:
-- requirements.txt: Dependencies
+- requirements.txt: dependencies
 - .gitignore: excludes unnecessary local files during commits
 
 Below is an example layout for the full repo as the project progresses\
